@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        background-color: red;
+    }
+    @keyframes change-color{
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+        }
+    }
+    @keyframes move{
+        0%{
+            top: 0;
+            left: 0
+        }
+        25%{
+            top: 0;
+            left: 1200px;
+        }
+        50%{
+            top: 490px;
+            left: 1200px;
+        }
+        75%{
+            top: 490px;
+            left: 0;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

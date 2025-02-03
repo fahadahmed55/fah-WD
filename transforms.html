@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms card</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: black */
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            border: 3px solid silver;
+            border-radius: 30px;
+            position: relative;
+            transition: all 1s;
+            color: white;
+            transform-style: preserve-3d;
+            
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .cardface{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+        }
+        .front{
+            background-color: lightcoral;
+            border-radius: 30px;
+        }
+        .back{
+            transform: rotatey(180deg);
+            background-color: rgb(211, 152, 75);
+            border-radius: 30px;
+            color: black;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            ra
+
+         
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="cardface front">hover to disclose</div>
+            <div class="cardface back"><img src="cat.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
