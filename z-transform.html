@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            position: relative;
+            border-radius: 20px;
+        }
+        .box1{
+            background-color: rgb(82, 82, 82);
+            top: 80px;
+            left: -70px;
+            z-index: 3;
+        }
+        .box2{
+            background-color: black;
+            z-index: 1;
+            transition: all ;
+
+        }
+        .box3{
+            background-color: rgb(82, 82, 82);
+            top: -80px;
+            left: 70px;
+            z-index: 2;
+        }
+        .box2:hover{
+            /* transform: translateY(80px); */
+            z-index: 3;
+        }
+        .box1:hover{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>
