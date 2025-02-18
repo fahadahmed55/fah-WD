@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Day Weather Forecast</title>
+    <style>
+        body {
+    background-color: #1a1a2e; /* Dark background color */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.forecast-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.forecast-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    margin: 5px 0;
+    border-radius: 10px; /* Rounded corners for all rows */
+}
+
+.forecast-row.today {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; /* Rounded corners for the top row */
+}
+
+.forecast-row:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; /* Rounded corners for the bottom row */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sunny {
+    background-color: yellow; /* Sunny Day color */
+}
+
+.cloudy {
+    background-color: gray; /* Cloudy color */
+}
+
+.rainy {
+    background-color: lightblue; /* Rainy color */
+}
+
+span {
+    flex: 1;
+    margin-left: 10px; /* Space between icon and text */
+}
+    </style>
+
+</head>
+<body>
+    <div class="forecast-container">
+        <h1>10-Day Forecast</h1>
+        <div class="forecast-row today">
+            <div class="icon sunny"></div>
+            <span>Today</span>
+            <span>39°/26°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon sunny"></div>
+            <span>Friday 11 Oct</span>
+            <span>39°/26°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon cloudy"></div>
+            <span>Saturday 12 Oct</span>
+            <span>38°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon rainy"></div>
+            <span>Sunday 13 Oct</span>
+            <span>37°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon sunny"></div>
+            <span>Monday 14 Oct</span>
+            <span>36°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon sunny"></div>
+            <span>Tuesday 15 Oct</span>
+            <span>37°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon cloudy"></div>
+            <span>Wednesday 16 Oct</span>
+            <span>37°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon cloudy"></div>
+            <span>Thursday 17 Oct</span>
+            <span>38°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon rainy"></div>
+            <span>Friday 18 Oct</span>
+            <span>37°/27°</span>
+        </div>
+        <div class="forecast-row">
+            <div class="icon cloudy"></div>
+            <span>Saturday 19 Oct</span>
+            <span>37°/27°</span>
+        </div>
+    </div>
+</body>
+</html>
